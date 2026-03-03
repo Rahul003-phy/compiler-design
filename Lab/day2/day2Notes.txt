@@ -1,6 +1,5 @@
 21/1/26
-# DFA based pattern recognition
-//Deterministic Finite Automata
+# DFA based pattern recognition//Deterministic Finite Automata
 
 
 # Problem statement: write a C program to recognize string 
@@ -23,3 +22,8 @@ a*
 a*b+
 abb
 1. NFA design korte hobe egular jonne , then DFA banabo, 
+
+day2 
+https://www.w3schools.com/c/c_enums.php
+https://www.w3schools.com/c/c_ref_string.php
+

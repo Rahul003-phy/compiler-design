@@ -17,14 +17,14 @@ int get_input(char c) {
 
 // Accepting states with token labels
 const char* accepting_tokens[NUM_STATES] = {
-    NULL,                // DEAD 0
-    NULL,                // DEAD 1
-    "a*b",              // D2 ----
-    "ca*",              // D3 ---
-    NULL,                // DEAD 4
+    NULL,              // DEAD 0
+    NULL,              // DEAD 1
+    "a*b",             // D2 ----
+    "ca*",             // D3 ---
+    NULL,              // DEAD 4
     "a*b",             // D5 ---
-    "abc+",             // D6 ---
-    NULL                // DEAD
+    "abc+",            // D6 ---
+    NULL               // DEAD
 };
 
 int main() {
