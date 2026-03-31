@@ -1,0 +1,60 @@
+solve the DFA for
+
+PROGRAM 1
+DFA for: aa*b | bb*c | cc*a
+Accepted patterns
+starts with a⁺ ends b
+starts with b⁺ ends c
+starts with c⁺ ends a
+
+| State | a    | b    | c    | Final |
+| ----- | ---- | ---- | ---- | ----- |
+| D0    | D1   | D2   | D3   | ❌    |
+| D1    | D1   | D4   | Dead | ❌    |
+| D2    | Dead | D2   | D5   | ❌    |
+| D3    | D6   | Dead | D3   | ❌    |
+| D4    | Dead | Dead | Dead | ✅    |
+| D5    | Dead | Dead | Dead | ✅    |
+| D6    | Dead | Dead | Dead | ✅    |
+| Dead  | Dead | Dead | Dead | ❌    |
+
+
+
+PROGRAM 2
+DFA for: a+b | b*c | ca+
+Accepted patterns
+one or more a then b
+zero or more b then c
+c followed by one or more a
+
+| State | a    | b    | c    | Final |
+| ----- | ---- | ---- | ---- | ----- |
+| D0    | D1   | D2   | D3   | ❌    |
+| D1    | D1   | D4   | Dead | ❌    |
+| D2    | Dead | D2   | D5   | ❌    |
+| D3    | D6   | Dead | Dead | ✅    |
+| D4    | Dead | Dead | Dead | ✅    |
+| D5    | Dead | Dead | Dead | ✅    |
+| D6    | D6   | Dead | Dead | ✅    |
+| Dead  | Dead | Dead | Dead | ❌    |
+
+
+
+
+
+ents/GitHub/compiler-design/labReport1Code/"2example
+Enter string: 12s
+12s Rejected
+
+nts/GitHub/compiler-design/labReport1Code/"2example 
+Enter string: caaa
+caaa Accepted (ca+)
+
+nts/GitHub/compiler-design/labReport1Code/"2example
+aEnter string: b
+ab Accepted (a+b)
+
+nts/GitHub/compiler-design/labReport1Code/"2example
+Enter string: a+b
+a+b Rejected
+
